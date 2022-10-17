@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+    <style>
+        .t-white {
+            color: white;
+        }
+
+        .text-white:hover {
+            background-color: blue;
+            color: black
+        }
+    </style>
+
+    <title>Ecommerce-Home</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2" href="https://mdbgo.com/">
+                <img src="logo2.png" height="20" alt="MDB Logo" loading="lazy" style="margin-top: -1px;" />
+            </a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+                <form class="input-group w-auto my-auto d-none d-sm-flex">
+                    <input autocomplete="off" type="search" class="form-control rounded" placeholder="Search"
+                        style="min-width: 125px;" />
+                    <span class="input-group-text border-0 d-none d-lg-flex">
+                        <button class="btn btn-link border-0"><i class="fas fa-search text-black-50"></i></button>
+                    </span>
+                </form>
+                <div class="d-flex align-items-center">
+                    <button type="button" class="btn btn-link px-3 me-2 t-white" onclick="login()">
+                        Login
+                    </button>
+                    <button type="button" class="btn btn-link me-3 t-white" onclick="register()">
+                        Sign up
+                    </button>
+                </div>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+
+    
+
+    <section style="background-color: #eee;">
+        <div class="container py-5">
+          <div class="row">
+            
+            <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+              <div class="card">
+                <div class="d-flex justify-content-between p-3">
+                  <p class="lead mb-0">Today's Combo Offer</p>
+                  <div
+                    class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                    style="width: 35px; height: 35px;">
+                    <p class="text-white mb-0 small">x4</p>
+                  </div>
+                </div>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/4.webp"
+                  class="card-img-top" alt="Laptop" />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <p class="small">Laptops</p>
+                    <p class="small text-danger"><s>$1099</s></p>
+                  </div>
+      
+                  <div class="d-flex justify-content-between mb-3">
+                    <h5 class="mb-0"><button class="bg-white border-0" style="margin-left:-7px;" onclick="loadviewpage()" class="text-muted">HP Notebook</button></h5>
+                    <h5 class="text-dark mb-0">$999</h5>
+                  </div>
+      
+                  <div class="d-flex justify-content-between mb-2">
+                    <p class="text-muted mb-0">Available: <span class="fw-bold">6</span></p>
+                    <div class="ms-auto text-warning">
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+              <div class="card">
+                <div class="d-flex justify-content-between p-3">
+                  <p class="lead mb-0">Today's Combo Offer</p>
+                  <div
+                    class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                    style="width: 35px; height: 35px;">
+                    <p class="text-white mb-0 small">x2</p>
+                  </div>
+                </div>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/7.webp"
+                  class="card-img-top" alt="Laptop" />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <p class="small"><a href="#!" class="text-muted">Laptops</a></p>
+                    <p class="small text-danger"><s>$1199</s></p>
+                  </div>
+      
+                  <div class="d-flex justify-content-between mb-3">
+                    <h5 class="mb-0">HP Envy</h5>
+                    <h5 class="text-dark mb-0">$1099</h5>
+                  </div>
+      
+                  <div class="d-flex justify-content-between mb-2">
+                    <p class="text-muted mb-0">Available: <span class="fw-bold">7</span></p>
+                    <div class="ms-auto text-warning">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+              <div class="card">
+                <div class="d-flex justify-content-between p-3">
+                  <p class="lead mb-0">Today's Combo Offer</p>
+                  <div
+                    class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                    style="width: 35px; height: 35px;">
+                    <p class="text-white mb-0 small">x3</p>
+                  </div>
+                </div>
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/5.webp"
+                  class="card-img-top" alt="Gaming Laptop" />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <p class="small"><a href="#!" class="text-muted">Laptops</a></p>
+                    <p class="small text-danger"><s>$1399</s></p>
+                  </div>
+      
+                  <div class="d-flex justify-content-between mb-3">
+                    <h5 class="mb-0">Toshiba B77</h5>
+                    <h5 class="text-dark mb-0">$1299</h5>
+                  </div>
+      
+                  <div class="d-flex justify-content-between mb-2">
+                    <p class="text-muted mb-0">Available: <span class="fw-bold">5</span></p>
+                    <div class="ms-auto text-warning">
+                      <i class="fa fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-white" href="#">VG Software Pvt. Ltd.</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
+
+</html>
