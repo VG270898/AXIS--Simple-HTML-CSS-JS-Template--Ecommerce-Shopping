@@ -23,16 +23,18 @@ function register(){
 }
 
 function loadviewpage(id){
-    //location.replace("productview.html");
-    // var image = document.querySelector("#"+id).getElementsById("#image");
-    //alert("#"+id);
+    
+    var image = document.querySelector("#"+id).querySelector(".product-image").src;
     var price = document.querySelector("#"+id).querySelector(".price");
-    alert(price.textContent);
-    //var itemname = document.querySelector("#"+id).querySelector(".titlename").value;
-
-    
-    // document.getElementById("pimage").src = image.value;
-    //document.getElementById("pprice").innerHTML=price.textContent;
-    // document.getElementById("pitemname").innerHTML=itemname.textContent;
-    
+    var itemname = document.querySelector("#"+id).querySelector(".itemname");
+    var star = document.querySelector("#"+id).querySelector(".price").getElementsByTagName("i")
+    let count=0;
+    // for(let i=0;i<star.length;i++){
+    //     if(star[i].getAttribute("class").split(" ")[0]=="fa"){
+    //         count +=1;
+    //     }
+    // }
+    // alert(count);
+    window.location.href="productview.html?price="+price.textContent+"&image="+image+"&itemname="+itemname.textContent+"&star="+star;
+    alert(price.textContent + itemname.textContent + image);        
 }
